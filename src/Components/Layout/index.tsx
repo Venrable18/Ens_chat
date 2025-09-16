@@ -1,7 +1,11 @@
+import  { type ReactNode } from 'react';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Toaster } from "sonner";
 
-const AppLayout = ({ children }) => {
+interface AppLayoutProps {
+  children: ReactNode;
+}
+const AppLayout = ({ children }: AppLayoutProps) => {
 
     return (
         <div className="w-full h-full">
